@@ -1,0 +1,144 @@
+.registrar-moto-form {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.form-section-header {
+  margin-bottom: 15px;
+}
+
+.form-section-header h5 {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #667eea;
+}
+
+.registrar-moto-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.registrar-moto-inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
+.registrar-moto-inputs label {
+  font-size: 13px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.registrar-moto-inputs input {
+  padding: 6px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.registrar-moto-inputs input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+  font-weight: 500;
+}
+
+.registrar-moto-inputs input.error {
+  border-color: #dc3545 !important;
+  background-color: #fff5f5;
+}
+
+.registrar-moto-botones {
+  display: flex;
+  gap: 8px;
+}
+
+.registrar-moto-botones button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registrar-moto-guardar {
+  background-color: #28a745;
+  color: white;
+}
+
+.registrar-moto-guardar:hover:not(:disabled) {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.registrar-moto-guardar:disabled {
+  background-color: #28a745;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.registrar-moto-cancelar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.registrar-moto-cancelar:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.registrar-moto-btn {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.registrar-moto-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .registrar-moto-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .registrar-moto-botones {
+    flex-direction: column;
+  }
+
+  .registrar-moto-botones button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,341 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding-bottom: 40px;
+}
+
+/* Header */
+.dashboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.header-content p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Menú Principal */
+.menu-principal {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-principal h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.menu-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menu-boton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-boton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: #f8f9ff;
+}
+
+.menu-icono {
+  font-size: 40px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.menu-texto {
+  flex: 1;
+}
+
+.menu-texto h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.menu-texto p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.menu-flecha {
+  font-size: 24px;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Resumen de Órdenes */
+.resumen-ordenes {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resumen-ordenes h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.resumen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.tarjeta-estado {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #ccc;
+}
+
+.tarjeta-estado:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-estado.recibida {
+  border-left-color: #3498db;
+  background: linear-gradient(135deg, #3498db15 0%, transparent 100%);
+}
+
+.tarjeta-estado.diagnostico {
+  border-left-color: #f39c12;
+  background: linear-gradient(135deg, #f39c1215 0%, transparent 100%);
+}
+
+.tarjeta-estado.en-proceso {
+  border-left-color: #e74c3c;
+  background: linear-gradient(135deg, #e74c3c15 0%, transparent 100%);
+}
+
+.tarjeta-estado.lista {
+  border-left-color: #f1c40f;
+  background: linear-gradient(135deg, #f1c40f15 0%, transparent 100%);
+}
+
+.tarjeta-estado.entregada {
+  border-left-color: #2ecc71;
+  background: linear-gradient(135deg, #2ecc7115 0%, transparent 100%);
+}
+
+.tarjeta-estado.cancelada {
+  border-left-color: #95a5a6;
+  background: linear-gradient(135deg, #95a5a615 0%, transparent 100%);
+}
+
+.tarjeta-total {
+  border-left-color: #667eea;
+  background: linear-gradient(135deg, #667eea15 0%, transparent 100%);
+  border-left: 4px solid #667eea;
+}
+
+.estado-numero {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.estado-nombre {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.estado-subtitulo {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Acciones Rápidas */
+.acciones-rapidas {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.acciones-rapidas h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.acciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.accion-rapida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.accion-rapida:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.accion-rapida.urgente {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+}
+
+.accion-rapida.urgente:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.accion-icono {
+  font-size: 28px;
+}
+
+.accion-texto {
+  text-align: center;
+}
+
+/* Sección de Ayuda */
+.seccion-ayuda {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-ayuda h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ayuda-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.ayuda-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ayuda-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ayuda-card h3 {
+  margin: 0 0 12px 0;
+  color: #667eea;
+  font-size: 18px;
+}
+
+.ayuda-card p {
+  margin: 0 0 8px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ayuda-card small {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 30px 20px;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .menu-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-boton {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-texto {
+    text-align: center;
+  }
+
+  .resumen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .acciones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ayuda-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .estado-numero {
+    font-size: 24px;
+  }
+
+  .resumen-ordenes h2,
+  .acciones-rapidas h2,
+  .seccion-ayuda h2 {
+    font-size: 22px;
+  }
+}

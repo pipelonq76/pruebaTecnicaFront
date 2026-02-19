@@ -1,0 +1,1 @@
+export { ListaReparada } from './listaReparada';
