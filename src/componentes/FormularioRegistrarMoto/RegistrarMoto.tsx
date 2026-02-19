@@ -64,6 +64,8 @@ export const RegistrarMoto = ({
         },
       };
 
+      //dad
+
       const response = await axios.post(`${API_BASE}/bikes`, payload);
 
       if (response.data && response.data.data) {
